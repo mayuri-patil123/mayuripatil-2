@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript setTimeout and classTimeout</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+    </div>
+    <script>
+        console.log("this is tutorial 58");
+        // setTimeout -->allows us to run the function once after the interval of time 
+        // clearTimeout --> allows us to run the function repeatedly after the interval of time
+
+        
+        function greet(name,byetext){
+            console.log("Hello Good Morning" + name + " " + byetext);
+        }
+        timeOut = setTimeout(greet,5000,"devesh","take care");
+          console.log(timeOut);
+          
+        // setTimeout(greet(),12000); --> wrong as it is calling the function onside setTimeout
+          
+        intevalId = setInterval(greet,1000,"devesh","good night")
+     clearInterval(intervalId);
+
+     function displayTime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById("time").innerHtml = time;
+     }
+
+     setInterval(displayTime, 1000);
+    </script>
+    
+</body>
+</html>

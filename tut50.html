@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions in javascript</title>
+</head>
+<body>
+    <h1>string functions</h1>
+    <script>
+        var str = "this is a string";
+        console.log(str);
+        // here str means string
+
+        // first occurence of a substring where it gives us the number from where repeating letters starts from the beginning of a sentence
+        // for this first occurence we use (indexof)
+        var position = str.indexOf('is');
+        console.log(position)
+
+        // last occurence of a substring where it gives us the number from where repeating letters are at the end of the sentences
+        // for this end occurence we use (lastindexof)
+        var position = str.lastIndexOf('is');
+        console.log(position);
+
+        // substring for a string
+        // var substr = str.slice(1,5);
+        // in above var substr it gives us slice means it gives us a sentence break into pieces means words into particular letter
+        var substr = str.substring(1,5);
+        console.log(substr)
+                    
+        //  variable use for replacing the word string from og sentence 
+        // var replaced = str.replaced('string','laptop');
+        // console.log(str)
+        // console.log(replaced)
+        *
+
+        // converting og sentence in uppercase and lowercase
+        console.log(str.toUpperCase());
+        // console.log(str.toLowercase());
+          
+        // newstring function to get new one
+        var newString = str.concat('New string')
+        console.log(newString)
+           
+        // function of whitespaces to get space in between the words of sentences
+        var strWithWitespaces = (" this contains   whitespaces    ");
+        // console.log(strWithWhitespaces)
+
+        // trim function to trim those whitespaces
+        // console.log(strWithWhitespaces.trim())
+
+        var y = new string("this");
+        console.log(y);
+        document.getElementById('content').innerHTML = '<h3>this is an h3 heading</h3>'
+
+         var char2 = str.charAt(2);
+         var char2 = str.charcodeAt(2); //not very important
+         console.log(char2)
+
+          console.log(str[3])
+
+
+    </script>
+</body>
+</html>

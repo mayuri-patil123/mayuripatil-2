@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>forms and tags</title>
+ </head>
+ <body>
+   <h3>this is html form tutorial</h3>
+   <!-- here we have taken backend php because the information we are gonna fill in the form will get calculated in backend -->
+
+   <form action="backend.php"></form>
+   <label for="name"> </label>
+
+   <!-- here div tag holds whole block of line thats why we are applying div tag here and then br tag -->
+   <div>
+     name: <input type="text" name="myname">
+   </div>
+   <br>
+   <div>
+      role:<input type="text" name="myrole">
+   </div>
+   <br>
+   <div>
+      profession:<input type="text" name="myprofession" >
+   </div>
+   <br>
+   <div>
+      date:<input type="date" name="mydate">
+   </div>
+   <br>
+   <div>
+      bonus:<input type="number" name="mybonus">
+   </div>
+   <br>
+   <!-- here it will give you checkbox to fill the form -->
+   <div>
+      are you eligible?:<input type="checkbox" name="myeligibility">
+   </div>
+   <br>
+
+   <!-- here radio means it will give you a circle to fill in according to our gender -->
+   <div>
+      gender:   male:<input type="radio" name="mygender" > female:<input type="radio" name="mygender">
+      others:<input type="radio" name="mygender" >
+   </div>
+   <br>
+
+   <!-- for submit this prompt will give submit button and for reset it wil give reset button -->
+   <div>
+      submit form:<input type="submit" name="submit now" >
+      <br>
+      reset form: <input type="reset" name="reset now">
+   </div>
+   <br>
+
+   <!-- here textarea means it will give us box space to wite about ourselves and according rows and columns -->
+   <div>
+        write about yourself :<textarea name="mytext" cols:90 rowa:20></textarea>    
+   </div>
+   <br>
+   <!-- here label means the product we want to get -->
+    <!-- here select inside the label tag means which product we want to select -->
+     <!-- options means number of options for selection of product -->
+   <div>
+      <label for="car">car</label>
+      <select name="mycar" id="car">
+         <option value="mer"> mercedes</option>
+         <option value="BMW">bmw</option>
+      </select>
+   </div>
+   
+ </body>
+ </html>

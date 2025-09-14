@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>ll
+</head>
+<body>
+    console.log("This is module");
+
+function average(arr){
+    let sum = 0;
+    arr.forEach(element => {
+        sum += element;
+    });
+    return sum/arr.length;
+}
+
+// module.exports = {
+//     avg: average,
+//     name: "Harry",
+//     repo: "GitHub"
+// }
+
+module.exports.name = "Harry";
+
+</body>
+</html>
